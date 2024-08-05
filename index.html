@@ -379,7 +379,7 @@
       <div class="container">
         <h2 class="text-center text-white">Our Instructors</h2>
         <p class="lead text-center text-white mb-5">
-          Our instructors both have 5+ years working as beekeepers
+          Our instructors both have 10+ years working as beekeepers
         </p>
         <div class="div row g-4">
           <div
@@ -404,7 +404,7 @@
                 <a href="https://www.facebook.com/MarkyJoePorcaro/"
                   ><i class="bi bi-facebook text-dark mx-1"></i
                 ></a>
-                <a href="https://www.instagram.com/owen_rd_apairy/"
+                <a href="https://www.instagram.com/marksbeez/"
                   ><i class="bi bi-instagram text-dark mx-1"></i
                 ></a>
               </div>
@@ -450,15 +450,17 @@
             <h2 class="text-center mb-4">Contact Info</h2>
             <ul class="list-group list-group-flush lead">
               <li class="list-group-item">
-                <span class="fw-bold">Main Location</span> Owen road Linden MI,
+                <span class="fw-bold">Location:</span> Owen Road Linden MI,
                 48451
               </li>
               <li class="list-group-item">
-                <span class="fw-bold">Phone</span> 810-714-****
+                <span class="fw-bold">Phone:</span> 810-714-****
               </li>
               <li class="list-group-item">
-                <span class="fw-bold">Email</span> Owenroadapiary@gmail.com
+                <span class="fw-bold">Email:</span> 
+                <a href="mailto:Owenroadapiary@gmail.com">Owenroadapiary@gmail.com</a>
               </li>
+              
             </ul>
           </div>
           <div class="col-md">
@@ -471,7 +473,7 @@
     <!-- Footer -->
     <footer class="p-5 bg-dark text-white text-center position-relative">
       <div class="container">
-        <p class="lead">Copyright &copy; 2023 Mark's Bee's</p>
+        <p class="lead">Copyright &copy; <span id="year"></span> Mark's Bee's</p>
 
         <a href="#" class="position-absolute bottom-0 end-0 p-5">
           <i class="bi bi-arrow-up-circle h1 text-white"></i>
@@ -574,6 +576,7 @@
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
       AOS.init();
     </script>
   </body>
